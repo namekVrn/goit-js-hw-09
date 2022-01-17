@@ -6,8 +6,8 @@ html,body {
   height: 100%;
 }
 body {
-  background: #0f3854;
-  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+  /* background: #0f3854;
+  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%); */
   background-size: 100%;
 }
 p {
@@ -44,7 +44,7 @@ button{
   font-size: 20px;
 }
 span{
-  color: #daf6ff;
+  color: #023242;
   text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
   letter-spacing: 0.05em;
       font-size: 16px;
@@ -88,11 +88,14 @@ span{
 }
 .roketTitle{
   text-align: center;
-  color: #daf6ff;
-  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  color: #2c2e2e;
+  text-shadow: 0 0 20px rgb(3, 43, 56),  0 0 20px rgba(10, 175, 230, 0);
   letter-spacing: 0.05em;
       font-size: 24px;
       padding: 5px 0;
 }
-  
+.value, .label{
+  color: black;
+  font-size: 28px;
+}
 

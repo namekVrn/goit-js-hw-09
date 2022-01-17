@@ -22,10 +22,12 @@ stopBtn.addEventListener('click', onStopTimer)
 startBtn.setAttribute('disabled', 'disabled')
 let time = null;
 let intervalTime = null
+
 console.log(intervalTime)
 function onStartTime(){
     let date = Date.now()
-    Notify.success('Запуск ядерной ракеты активирован');
+   
+    Notify.success('Запуск ядерной ракеты активирован', {timeout: 6000,});
     roketTitle.textContent = "До запуска ядерной ракеты осталось:"
     intervalTime = setInterval(()=>{
         let date = Date.now()
@@ -34,7 +36,6 @@ function onStartTime(){
         console.log(convertMs(seconds))
         convertMs(seconds)
         getUpdateContent(convertMs(seconds))
-        
 
     },1000 )
     
